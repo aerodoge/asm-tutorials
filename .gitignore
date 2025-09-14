@@ -1,7 +1,6 @@
-*.o
+.vscode
+.idea
 
-#bin
-exit
-maximum
+build/
 
 

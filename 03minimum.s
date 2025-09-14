@@ -1,5 +1,5 @@
 # %edi 正在检测的数的索引
-# %ebx 已找到的最大数
+# %ebx 已找到的最小数
 # %eax 当前数据
 
 .section .data
@@ -23,23 +23,10 @@ start_loop:
     je loop_exit
 
     cmpl %ebx, %eax
-    jle start_loop
+    jge start_loop
     
     movl %eax, %ebx
     jmp start_loop
 loop_exit:
     movl $1, %eax
     int $0x80
-
-
-
-
-
-
-
-
-
-
-
-
-
