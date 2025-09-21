@@ -6,7 +6,7 @@
 # sudo apt-get update
 # sudo apt-get install gcc-multilib
 
-# 计算 $2^3 + 5^2$
+# 计算 2^3 + 5^2
 .section .data
 .section .text
 
