@@ -8,7 +8,7 @@ int main() {
     double elapsed;
     clock_gettime(CLOCK_MONOTONIC, &start);
 
-    // 所缓存行
+    // 锁缓存行
     for(int i = 0; i < 1000000; i++) {
         __sync_fetch_and_add(&counter, 1);  // LOCK XADD
     }
